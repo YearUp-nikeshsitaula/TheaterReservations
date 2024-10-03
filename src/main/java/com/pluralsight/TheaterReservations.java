@@ -37,7 +37,11 @@ public class TheaterReservations {
         //If condition that will print out either number of tickets, or a number of ticket
         if (valueOfTickets > 1){
             System.out.println(valueOfTickets + " " + "tickets reserved for " + date + " " + "under " + lastName + ", " + firstName);
-        }else {
+        }
+        else if (valueOfTickets == 0){
+            System.out.println("No tickets reserved");
+        }
+        else {
             System.out.println(valueOfTickets + " " + "ticket reserved for " + date + " " + "under " + lastName + ", " + firstName);
         }
 
